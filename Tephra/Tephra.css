@@ -1,7 +1,6 @@
 /*----------- Repeating Blocks -------------*/
 .charsheet .repcontrol_add {
     display: block;
-    background:black;
     color:white;
     text-shadow:0px 0px 2px black,0px 0px 2px black,0px 0px 2px black;
     box-shadow:none;
@@ -92,7 +91,7 @@ div.sheet-core-content {
     background-repeat: no-repeat;
 	color: black; /*originally white*/
 	/*font-family: "Tinos", "Quattrocento", "Lustria", "Buenardserif", serif;*/
-	font-weight: bold;
+	font-weight: normal;
 	border-radius: 4px;
     border: 2px solid #997C4D;
 	
@@ -171,7 +170,7 @@ input.sheet-text[type="text"]:focus {
     text-align:center;
 
     color: black;
-    font-weight:bold;
+    font-weight:normal;
     font-size:1.2em;
     font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
     
@@ -199,7 +198,7 @@ select.sheet-smallselect {
 h4 {
     font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
     color: #997C4D;
-    font-weight:bold;
+    font-weight:normal;
     text-align:center;
 }
 textarea.sheet-notes {
@@ -285,7 +284,7 @@ input.sheet-bigcheck[type="radio"]:checked + span::before
     color: red;
     content: "✓";
     text-shadow:none;
-    font-weight:bold;
+    font-weight:normal;
 }
 /*------------Button-----------*/
 /* ======== attribute ========*/
@@ -350,7 +349,7 @@ input.sheet-bigcheck[type="radio"]:checked + span::before
     background: radial-gradient(circle at 0px 10px, white, gray);
     font-size:1em !important;  
     font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
-    font-weight:bold;
+    font-weight:normal;
     height:25px; 
     width: 120px; 
     padding-left:20px;
