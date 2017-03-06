@@ -643,7 +643,7 @@
                     <th class="sheet-left">AP to Ready</th>
                 </tr>
                 <tr>
-                    <th><button type="roll" class="sheet-skillbtn" name="attr_Accuracy_roll-1" value="&{template:attack}{{weapon= @{weapon-name-1}}} {{character= @{character_name}}} {{roll= [[1d12!+[[@{weapon-Accuracy-1}]] + [[@{Specialty-Accuracy-total}]]]] }} {{damage= @{weapon-DamageClassTier1-1}/@{weapon-DamageClassTier2-1}/@{weapon-DamageClassTier3-1}/@{weapon-DamageClassTier4-1}}} {{notes= @{weapon-notes-1} }}">Accuracy</button></th>
+                    <th><button type="roll" class="sheet-skillbtn" name="attr_Accuracy_roll-1" value="&{template:attack}{{weapon= @{weapon-name-1}}} {{character= @{character_name}}} {{roll= [[1d12!+[[@{weapon-Accuracy-1}]] + [[@{Specialty-Accuracy-total}]]]] }} {{strike= [[1d12!+[[@{weapon-Strike-1}]] + [[@{Specialty-Strike-total}]]]] }} {{damage= @{weapon-DamageClassTier1-1}/@{weapon-DamageClassTier2-1}/@{weapon-DamageClassTier3-1}/@{weapon-DamageClassTier4-1}}} {{notes= @{weapon-notes-1} }}">Accuracy</button></th>
                     <th><input type="number" class="sheet-Specialty" name="attr_weapon-Accuracy-1" value="0"/></th>
                     <th><input type="number" class="sheet-Specialty" name="attr_weapon-Strike-1" value="0"/></th>
                     <th><button type="roll" class="sheet-skillbtn" name="attr_Strike_roll-1" value="&{template:attack}{{weapon= @{weapon-name-1}}} {{character= @{character_name}}} {{roll= [[1d12!+[[@{weapon-Strike-1}]] + [[@{Specialty-Strike-total}]]]] }} {{damage= @{weapon-DamageClassTier1-1}/@{weapon-DamageClassTier2-1}/@{weapon-DamageClassTier3-1}/@{weapon-DamageClassTier4-1}}} {{notes= @{weapon-notes-1} }}">Strike</button></th>
@@ -756,11 +756,15 @@
     <table>
         <tr><th colspan="2">{{weapon}}</th></tr>
         <tr>
-            <td  colspan="2" class="sheet-detail"><i><b>{{character}}</b> uses {{weapon}} </i></td>
+            <td  colspan="2" class="sheet-detail"><i>{{character}} uses {{weapon}} </i></td>
         </tr>
         <tr>
             <td>Attack</td>
             <td><span class="tcat">{{roll}}</span></td>    
+        </tr>
+        <tr>
+            <td>Strike</td>
+            <td><span class="tcat">{{strike}}</span></td>    
         </tr>
         <tr>
             <td>Damage</td>
